@@ -10,18 +10,21 @@ import items from './products.json'
 
 <template>
 
-
-
   <div>
   <Mybar />
   </div>
 
-  <h1>Products</h1>
+  <h1 class="topic">Mouse</h1>
   <div class="card-grid">
       <Mycart v-bind="items[0]" />
       <Mycart v-bind="items[1]" />
       <Mycart v-bind="items[2]" />
       <Mycart v-bind="items[3]" />
+  </div>
+
+  <br><br><br>
+  <h1 class="topic">Keyboard</h1>
+  <div class="card-grid">
       <Mycart v-bind="items[4]" />
       <Mycart v-bind="items[5]" />
       <Mycart v-bind="items[6]" />
@@ -42,33 +45,44 @@ import items from './products.json'
 /* ตั้งค่าพื้นฐานให้กับ body ของหน้าเว็บ */
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0; /* ไม่เว้นขอบรอบหน้า */
-  background-color: #f4f4f4; /* สีพื้นหลังเทาอ่อน */
+  background-color: #ffbbbb; /* สีพื้นหลังเทาอ่อน */
   padding: 20px; /* เว้นขอบด้านในของ body */
 }
 
 /* กำหนดสไตล์ให้กับ #app ซึ่งเป็น div หลักใน Vue */
 #app {
   text-align: center;        /* จัดข้อความให้อยู่กึ่งกลาง */
-  max-width: 1200px;         /* กำหนดความกว้างสูงสุดของเนื้อหา */
+  max-width: 1300px;         /* กำหนดความกว้างสูงสุดของเนื้อหา */
   margin: 0 auto;            /* จัดให้อยู่ตรงกลางของหน้าจอ */
 }
 
 /* สไตล์สำหรับหัวข้อหลัก */
 h1 {
   color: #000000;
-  margin-bottom: 30px;       /* เว้นระยะด้านล่างของหัวข้อ */
+  margin-bottom: 10px;       /* เว้นระยะด้านล่างของหัวข้อ */
 }
 
+h1.topic{
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #000000, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+
+}
 
 /* --------------------- Responsive Grid System --------------------- */
 
-/* สร้างกริดแสดงการ์ดแบบ 1 คอลัมน์ สำหรับหน้าจอเล็ก */
 .card-grid {
   display: grid;                  /* ใช้ grid layout */
   grid-template-columns: 1fr;    /* 1 คอลัมน์ (เต็มแถว) */
   gap: 20px;                      /* ระยะห่างระหว่างการ์ด */
   justify-items: center;         /* จัดให้อยู่ตรงกลางในแต่ละแถว */
+  border-radius: 12px;
+  border: 3px solid #ebebeb;
+  padding: 20px;
+  box-shadow: 0 15px 8px rgba(0,0,0,0.1);
 }
 
 

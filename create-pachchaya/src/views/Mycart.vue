@@ -1,20 +1,11 @@
 <template>
 
     <div class="card">
-        <img src="../img/Mose1_LOGITECH GAMING MOUSE G PRO 2 LIGHTSPEED PINK.jpg" width="300px" height="300px">
-        <h2>LOGITECH G PRO 2 LIGHTSPEED PINK</h2>
-        <p class="price">$19.99</p>
-        <p>GAMING</p>
-        <p><button>Add to Cart</button></p>
-    </div>
-
-
-    <div class="card">
-        <img src="../img/Mose2_ONIKUMA Mizu Wired Gaming Mouse.PNG" width="300px" height="300px">
-        <h2>ONIKUMA Mizu Wired Gaming Mouse</h2>
-        <p class="price">$19.99</p>
-        <p>GAMING</p>
-        <p><button>Add to Cart</button></p>
+        <img :src="coverimage" width="300px" height="300px">
+        <h2>{{name}}</h2>
+        <h5>{{detail}}</h5>
+        <p class="price">{{price}}</p>
+        <h3><button>Add to Cart</button></h3>
     </div>
 
 </template>
@@ -22,7 +13,10 @@
 
 
 <script>
+export default{
+    props: ['id', 'name', 'detail', 'coverimage', 'price']
 
+}
 
 </script>
     
@@ -30,6 +24,23 @@
 
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playpen+Sans+Thai:wght@100..800&display=swap');
+
+h2{
+    color: #000;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+
+}
+
+p{
+    color: #000;
+    font-weight: 10;
+    
+}
+
+
+
 .card {
 /* Add shadows to create the "card" effect */
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -76,15 +87,20 @@ font-size: 18px;
 opacity: 0.7;
 }
 
-h2{
-    color: #000;
+div.card{
+    background-color: #ffe0e0;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* มุมโค้งนิด ๆ */
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
 }
 
-p{
-    color: #000;
-    font-weight: 300;
-    
+div.card:hover {
+    transform: scale(1.05);
 }
+
 
 
 

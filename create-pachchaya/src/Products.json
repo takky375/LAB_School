@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "LOGITECH GAMING MOUSE G PRO 2 LIGHTSPEED PINK",
+    "detail": "GAMING MOUSE",
+    "coverimage": "src/img/Mouse1_LOGITECH GAMING MOUSE G PRO 2 LIGHTSPEED PINK.jpg",
+    "price": "$20.00"
+  },
+  {
+    "id": 2,
+    "name": "ONIKUMA Mizu Wired Gaming Mouse",
+    "detail": "GAMING MOUSE",
+    "coverimage": "/src/img/Mouse2_ONIKUMA Mizu Wired Gaming Mouse.PNG",
+    "price": "$29.99"
+  },
+  {
+    "id": 3,
+    "name": "Mouse Razor",
+    "detail": "GAMING MOUSE",
+    "coverimage": "/src/img/Mouse3_Razor.PNG",
+    "price": "$30.99"
+  },
+  {
+    "id": 4,
+    "name": "DAMYSUS WIRELESS RGB Ergonomic Gaming Mouse",
+    "detail": "GAMING MOUSE",
+    "coverimage": "/src/img/Mouse4_DAMYSUS WIRELESS RGB Ergonomic Gaming Mouse.jpg",
+    "price": "$30.99"
+  },
+
+
+  {
+    "id": 5,
+    "name": "Air75V.1 Ultra-slim Wireless Mechanical Keyboard",
+    "detail": "Wireless Mechanical Keyboard",
+    "coverimage": "https://nuphyth.com/cdn/shop/products/Air75-SKU-Websize_01_Eng0156.jpg?v=1694431791&width=1800",
+    "price": "$27.99"
+  },
+  {
+    "id": 6,
+    "name": "Vortexgear Tab 75 Mechanical Keyboard Red Switch",
+    "detail": "Tab 75 Mechanical Keyboard",
+    "coverimage": "https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2021/01/Vortexgear-Tab-75-Mechanical-Keyboard-1.jpg",
+    "price": "$40.25"
+  },
+  {
+    "id": 7,
+    "name": "HYPERX ALLOY ORIGINS 60 RED SW (US) Gaming Keyboard",
+    "detail": "Mechanical Keyboard",
+    "coverimage": "https://res.cloudinary.com/itcity-production/image/upload/f_jpg,q_80,w_1000/v1652159016/products/PRD202205001348/skus/gfstjegmztvmdbk3xtmx.jpg",
+    "price": "$40.25"
+  },
+  {
+    "id": 8,
+    "name": " KEYBOARD EGA TYPE CMK1 (BLUE/RED SWITCH)",
+    "detail": "Mechanical Keyboard",
+    "coverimage": "https://th-test-11.slatic.net/p/54b4d4ae6d1b1463674fc3e2d038cac9.png",
+    "price": "$40.25"
+  },
+  {
+    "id": 9,
+    "name": "Cypher - 61 keys gaming keyboard - Black",
+    "detail": "Mechanical Keyboard",
+    "coverimage": "https://gentooshop.com/media/catalog/product/cache/41775008e607f977bf490474c2405889/k/e/keyboard-b_1.png",
+    "price": "$40.25"
+  },
+  {
+    "id": 10,
+    "name": "Rapoo V500 PRO Backlit USB Mechanical Gaming Keyboard",
+    "detail": "Mechanical Keyboard",
+    "coverimage": "https://www.startech.com.bd/image/cache/catalog/keyboard/rapoo/v500pro/v500pro-1-500x500.jpg",
+    "price": "$40.25"
+  }
+]

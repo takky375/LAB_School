@@ -35,7 +35,7 @@
   .nav-links {
     display: flex;
     justify-content: center;
-    background: #ff2b60;
+    background: #ff3a6c;
     padding: 20px 50px;
     border-radius: 12px;
     box-shadow: 10px 20px 80px rgba(0,0,0,0.2);
