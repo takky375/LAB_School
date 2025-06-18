@@ -1,4 +1,5 @@
 <template>
+
     <div>
     <ul class="nav-links">
         <li class=""><a href="#">HOME</a></li>
@@ -6,10 +7,11 @@
         <li class=""><a href="#">Contact</a></li>
         <li class=""><a href="#">About</a></li>
     </ul>
+
     <br>  
     </div>
     
-  
+    
 </template>
   
   
@@ -20,40 +22,44 @@
 </script>
   
 
-
 <style scoped>
-  /* Google Fonts Import Link */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playpen+Sans+Thai:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
   }
-  
+
   .nav-links {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 60px;
     background: #ff3a6c;
-    padding: 20px 50px;
-    border-radius: 12px;
+    padding: 10px 20px;
     box-shadow: 10px 20px 80px rgba(0,0,0,0.2);
+    font-family: 'Oswald';
     flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .nav-links li {
     list-style: none;
-    margin: 10px 30px;
     font-size: 20px;
   }
 
   .nav-links li a {
     position: relative;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 800;
-    padding: 6px 0;
+    padding: 6px 12px;
     text-decoration: none;
   }
 
@@ -72,33 +78,33 @@
     width: 100%;
   }
 
-
-  .bodytext {
-    color: black;
-    text-align: center;
-  }
-
-  /* Responsive part */
+  /* 👇 Responsive: แท็บเล็ต (แนวตั้ง/แนวนอน) */
   @media (max-width: 768px) {
     .nav-links {
-      padding: 15px 20px;
+      gap: 30px;
+      padding: 10px;
     }
 
-    .nav-links li {
-      margin: 10px 15px;
-      font-size: 18px;
+    .nav-links li a {
+      font-size: 20px;
     }
   }
 
+  /* 👇 Responsive: มือถือ */
   @media (max-width: 480px) {
     .nav-links {
       flex-direction: column;
+      gap: 12px;
       align-items: center;
-      padding: 10px 10px;
+      padding: 12px 10px;
     }
 
     .nav-links li {
-      margin: 8px 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      font-size: 18px;
     }
   }
 </style>

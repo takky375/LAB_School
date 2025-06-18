@@ -40,7 +40,6 @@ p{
 }
 
 
-
 .card {
 /* Add shadows to create the "card" effect */
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -56,7 +55,7 @@ box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
 img {
-border-radius: 5px 5px 0 0;
+border-radius: 5px;
 }
 
 /* Add some padding inside the card container */
@@ -72,23 +71,27 @@ font-size: 22px;
 }
 
 .card button {
-border: none;
-outline: 0;
-padding: 12px;
-color: white;
-background-color: #000;
-text-align: center;
-cursor: pointer;
-width: 100%;
-font-size: 18px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* เพิ่มความนุ่มนวลเวลาเปลี่ยนสี */
 }
 
 .card button:hover {
-opacity: 0.7;
+  background-color: #ff0000; /* เปลี่ยนสีตามที่คุณต้องการ */
+
 }
 
+
 div.card{
-    background-color: #ffe0e0;
+    background-color: #ffd4d4;
     border: 2px solid #ddd;
     border-radius: 8px; /* มุมโค้งนิด ๆ */
     padding: 5px;
@@ -100,8 +103,6 @@ div.card{
 div.card:hover {
     transform: scale(1.05);
 }
-
-
 
 
 </style>
