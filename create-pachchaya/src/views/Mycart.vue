@@ -22,10 +22,8 @@ export default {
         type:[String, Number],
         required: true,
       },
-    }
-    
-
-}
+    },   
+};
 
 </script>
 
