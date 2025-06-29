@@ -1,4 +1,15 @@
+<script>
+export default {
+    props: ['id', 'name', 'detail', 'coverimage', 'price']
+
+}
+
+</script>
+
+
+
 <template>
+
 
     <div class="card">
         <img :src="coverimage" width="300px" height="300px">
@@ -10,15 +21,6 @@
 
 </template>
 
-
-
-<script>
-export default {
-    props: ['id', 'name', 'detail', 'coverimage', 'price']
-
-}
-
-</script>
 
 
 

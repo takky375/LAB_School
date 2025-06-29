@@ -1,12 +1,3 @@
-<template>
-    <div>
-      <p class="p1"> 404 - Page not Found </p> <br><br><br>
-      <button @click="goHome" style="color: red;">Back to Home page !!</button>
-    </div>
-</template>
-
-
-
 <script>
 export default{
   name: 'NotFound',
@@ -18,6 +9,16 @@ export default{
 };
 
 </script>
+
+
+
+<template>
+    <div>
+      <p class="p1"> 404 - Page not Found </p> <br><br><br>
+      <button @click="goHome" style="color: red;">Back to Home page !!</button>
+    </div>
+</template>
+
 
 
 

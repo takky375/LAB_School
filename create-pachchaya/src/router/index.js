@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Promotion from '../views/Promotion.vue'
-import Contact from '../views/Contact.vue'
 import About from '../views/About.vue'
 import NotFound from '@/views/NotFound.vue'
+import Product from '@/views/product.vue'
 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/promotion', name: 'Promotion', component: Promotion },
-  { path: '/contact', name: 'Contact', component: Contact },
+  { path: '/product', name: 'product', component: Product },
   { path: '/about', name: 'About', component: About },
   { path: '/:catchAll(.*)', name: 'NotFound', component: NotFound },
 ]
+
+
 
 const router = createRouter({
   history: createWebHistory(),
