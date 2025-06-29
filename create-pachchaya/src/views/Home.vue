@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 export default {
-    name : 'Homepage',
+    name : 'Home',
     setup(){
          const Message = ref('ยินดีต้อนรับ')
          return {Message}

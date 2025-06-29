@@ -3,13 +3,21 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import NotFound from '@/views/NotFound.vue'
 import Product from '@/views/product.vue'
+import productdetail from '@/views/productdetail.vue'
 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/product', name: 'product', component: Product },
   { path: '/about', name: 'About', component: About },
+  { path: '/products/:id', name: 'productdetail', component: productdetail, props: true },
+
+
+
+
+
   { path: '/:catchAll(.*)', name: 'NotFound', component: NotFound },
+
 ]
 
 

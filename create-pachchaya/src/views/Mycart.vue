@@ -1,6 +1,29 @@
 <script>
 export default {
-    props: ['id', 'name', 'detail', 'coverimage', 'price']
+  name: "Mycart",
+    props: {
+      id:{
+        type:[String, Number],
+        required: true,
+      },
+      name:{
+        type: String,
+        required: true,
+      },
+      detail:{
+        type: String,
+        default:"",
+      },
+      coverimage:{
+        type: String,
+        required: true,
+      },
+      price:{
+        type:[String, Number],
+        required: true,
+      },
+    }
+    
 
 }
 
@@ -17,6 +40,10 @@ export default {
         <h5>{{ detail }}</h5>
         <p class="price">{{ price }}</p>
         <h3><button>Add to Cart</button></h3>
+        <p><router-link :to=" `/products/${id}` ">
+        <button>View Details</button>
+        </router-link></p>
+
     </div>
 
 </template>
