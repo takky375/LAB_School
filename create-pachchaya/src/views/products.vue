@@ -1,30 +1,36 @@
 <script setup>
-import Mycart from './Mycart.vue';
-import products from '@/products.json'
+import { ref, onMounted } from 'vue'
+import Mycart from './Mycart.vue'
 
+const products = ref([])
+
+onMounted(() => {
+  fetch('https://fakestoreapi.com/products')
+    .then((res) => res.json())
+    .then((data) => {
+      products.value = data
+    })
+    .catch((err) => console.error('Error fetching products:', err))
+})
 </script>
-
-
-
 
 <template>
   <div>
     <h1>Products</h1>
   </div>
 
-    <div class="card-grid">
-      <Mycart v-for="item in products" 
-      :key="item.id" 
+  <div class="card-grid">
+    <Mycart
+      v-for="item in products"
+      :key="item.id"
       :id="item.id"
-      :name="item.name"
-      :detail="item.detail"
-      :coverimage="item.coverimage"
+      :name="item.title"
+      :detail="item.description"
+      :coverimage="item.image"
       :price="item.price"
-       />
-    </div>
-
+    />
+  </div>
 </template>
-
 
 
 

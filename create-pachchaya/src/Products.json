@@ -3,28 +3,28 @@
     "id": 1,
     "name": "LOGITECH GAMING MOUSE G PRO 2 LIGHTSPEED PINK",
     "detail": "GAMING MOUSE",
-    "coverimage": "src/img/Mouse1_LOGITECH GAMING MOUSE G PRO 2 LIGHTSPEED PINK.jpg",
+    "coverimage": "/img/Mouse1_LOGITECH GAMING MOUSE G PRO 2 LIGHTSPEED PINK.jpg",
     "price": "$20.00"
   },
   {
     "id": 2,
     "name": "ONIKUMA Mizu Wired Gaming Mouse",
     "detail": "GAMING MOUSE",
-    "coverimage": "/src/img/Mouse2_ONIKUMA Mizu Wired Gaming Mouse.PNG",
+    "coverimage": "/img/Mouse2_ONIKUMA Mizu Wired Gaming Mouse.PNG",
     "price": "$29.99"
   },
   {
     "id": 3,
     "name": "Mouse Razor",
     "detail": "GAMING MOUSE",
-    "coverimage": "/src/img/Mouse3_Razor.PNG",
+    "coverimage": "/img/Mouse3_Razor.PNG",
     "price": "$30.99"
   },
   {
     "id": 4,
     "name": "DAMYSUS WIRELESS RGB Ergonomic Gaming Mouse",
     "detail": "GAMING MOUSE",
-    "coverimage": "/src/img/Mouse4_DAMYSUS WIRELESS RGB Ergonomic Gaming Mouse.jpg",
+    "coverimage": "/img/Mouse4_DAMYSUS WIRELESS RGB Ergonomic Gaming Mouse.jpg",
     "price": "$30.99"
   },
   {
